@@ -53,6 +53,8 @@ sudo apt install -y p4lang-pi p4lang-bmv2 p4lang-p4c
 
 # mininet
 # https://bugs.launchpad.net/ubuntu/+source/pyflakes/+bug/1951338
+# Remove installed
+sudo apt purge -y mininet
 cd `mktemp -d`
 git clone --depth=1 https://github.com/mininet/mininet.git
 sed -i 's/$pf//' mininet/util/install.sh
